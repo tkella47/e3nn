@@ -74,7 +74,7 @@ Which can be represented by
     plt.imshow(torch.kron(D_x, D_y), cmap='bwr', vmin=-1, vmax=1);
 
 
-This representation is not irreducible (is reducible). It can be decomposed into irreps by a change of basis. The outerproduct followed by the change of basis is done by the class `e3nn.o3.FullTensorProduct`.
+This representation is not irreducible (is reducible) (needs explaination). It can be decomposed into irreps by a change of basis. The outerproduct followed by the change of basis is done by the class `e3nn.o3.FullTensorProduct`.
 
 .. jupyter-execute::
 
@@ -92,7 +92,7 @@ As a sanity check, we can verify that the representation of the tensor prodcut i
     plt.imshow(D, cmap='bwr', vmin=-1, vmax=1);
 
 
-`e3nn.o3.FullTensorProduct` is a special case of `e3nn.o3.TensorProduct`, other ones like `e3nn.o3.FullyConnectedTensorProduct` can contained weights what can be learned, very useful to create neural networks.
+`e3nn.o3.FullTensorProduct` is a special case of `e3nn.o3.TensorProduct`, other ones like `e3nn.o3.FullyConnectedTensorProduct` can contain weights which can be learned, making it useful to create neural networks.
 
 
 .. _pytorch: https://pytorch.org/
