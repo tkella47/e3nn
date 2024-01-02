@@ -84,7 +84,7 @@ This representation is not irreducible (is reducible) (needs explaination). It c
     tp(x, y)
 
 
-As a sanity check, we can verify that the representation of the tensor prodcut is block diagonal and of the same dimension.
+As a sanity check, we can verify that the representation of the tensor product is block diagonal and of the same dimension.
 
 .. jupyter-execute::
 
@@ -92,7 +92,7 @@ As a sanity check, we can verify that the representation of the tensor prodcut i
     plt.imshow(D, cmap='bwr', vmin=-1, vmax=1);
 
 
-`e3nn.o3.FullTensorProduct` is a special case of `e3nn.o3.TensorProduct`, other ones like `e3nn.o3.FullyConnectedTensorProduct` can contain weights which can be learned, making it useful to create neural networks.
+`e3nn.o3.FullTensorProduct` is a special case of `e3nn.o3.TensorProduct`. Another example is `e3nn.o3.FullyConnectedTensorProduct`, which contains learnable weights, making it useful to create neural networks.
 
 
 .. _pytorch: https://pytorch.org/
